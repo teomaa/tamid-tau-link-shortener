@@ -19,7 +19,7 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">Cover</h3>
+          <img class="tamid-logo" src="img/tamid-logo.png"></img>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link active" href="#">Home</a>
             <a class="nav-link" href="#">Features</a>
@@ -31,10 +31,31 @@
       <main role="main" class="inner cover">
         <h1 class="cover-heading">Cover your page.</h1>
         <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
+
+        <form class="form-inline mx-auto">
+          <div class="form-group mx-sm-2 mb-2">
+            <label class="sr-only">Your URL</label>
+            <input class="form-control" id="url_text_field" placeholder="Your URL">
+          </div>
+          <p class="lead">
           <a href="#" id="main_button" class="btn btn-lg btn-secondary">Learn more</a>
         </p>
+        </form>
+
+        <form class="form-inline mx-auto">
+          <div class="form-group mx-sm-2 mb-2">
+            <label class="sr-only">Your URL</label>
+            <input class="form-control" id="shorturl_text_field" placeholder="Short url">
+          </div>
+          <p class="lead">
+          <a href="#" id="redirect_button" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+        </form>
       </main>
+
+      <div class="alert alert-primary "  role="alert">
+        Success! Your short url is ...
+      </div>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
