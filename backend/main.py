@@ -64,7 +64,7 @@ def save_anonymous():
         json['views'] = 0
         json['user'] = "anon"
         url_database.document(json['id']).set(json)
-        return 'Success', 200
+        return short_url, 200
     except Exception as e:
         return f"An Error Occurred: {traceback.format_exc()}"
 
