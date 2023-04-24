@@ -69,5 +69,26 @@
 
 <script src="script.js"></script>
 
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyC67DsenneiHGxwUsLmXxNguCr66QxOqA4",
+    authDomain: "tamid-tau-link-shortener.firebaseapp.com",
+    projectId: "tamid-tau-link-shortener",
+    storageBucket: "tamid-tau-link-shortener.appspot.com",
+    messagingSenderId: "252737719873",
+    appId: "1:252737719873:web:184bd9c628fa05a507c0c0"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
 </body>
 </html>
