@@ -1,75 +1,73 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <!-- Page title -->
+    <title>TAMID URL Shortener</title>
 
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
-  </head>
+</head>
 
-  <body class="text-center">
+<body class="text-center">
 
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
 
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
+    <!-- TAMID Logo -->
+    <header class="masthead mb-auto">
         <div class="inner">
-          <img class="tamid-logo" src="img/tamid-logo.png"></img>
+            <img class="tamid-logo" src="img/tamid-logo.png"/>
         </div>
-      </header>
+    </header>
 
-      <main role="main" class="inner cover">
+    <!-- Custom styles for this template -->
+    <main role="main" class="inner cover">
         <h1 class="cover-heading">The TAMID Link Shortener</h1>
         <p class="lead">
-           A quick and easy way to convert any long URL into a short, easy to remember one. With our great app, your links
-           will TAMID be shorter than the competition!
+            A quick and easy way to convert any long URL into a short, easy to remember one. With our great app, your
+            links
+            will TAMID be shorter than the competition!
         </p>
 
+        <!-- Form with input and button to shorten URLs -->
         <form class="form-inline mx-auto">
-          <div class="form-group mx-sm-2 mb-2">
-            <label class="sr-only">Your URL</label>
-            <input class="form-control" id="url_text_field" placeholder="Long URL">
-          </div>
-          <p class="lead">
-          <a href="#" id="main_button" class="btn btn-lg btn-secondary">Shorten</a>
-        </p>
+            <div class="form-group mx-sm-2 mb-2">
+                <label class="sr-only">Your URL</label>
+                <input class="form-control" id="url_text_field" placeholder="Long URL">
+            </div>
+            <p class="lead">
+                <a href="#" id="main_button" class="btn btn-lg btn-secondary">Shorten</a>
+            </p>
         </form>
 
-        <form class="form-inline mx-auto">
-          <div class="form-group mx-sm-2 mb-2">
-            <label class="sr-only">Your URL</label>
-            <input class="form-control" id="shorturl_text_field" placeholder="Short URL">
-          </div>
-          <p class="lead">
-          <a href="#" id="redirect_button" class="btn btn-lg btn-secondary">Go there!</a>
-        </p>
-        </form>
-      </main>
-
-      <div class="alert alert-primary "  role="alert">
-        Success! Your short url is ...
-      </div>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Made by the members of TAMID at Tel Aviv University</p>
-        </div>
-      </footer>
+    <!-- Alert shown when a URL is shortened -->
+    <div class="alert alert-primary " role="alert">
+        Success! Your short url is <a href="" id="short_url_clickable"></a>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
-    <script src="jquery-3.6.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>Made by the members of TAMID at Tel Aviv University</p>
+        </div>
+    </footer>
+</div>
 
-    <script src="script.js"></script>
-  </body>
+<script src="jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+</body>
 </html>
