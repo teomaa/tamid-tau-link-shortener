@@ -3,7 +3,7 @@ Built by the members of [TAMID](https://tamidgroup.org) at Tel Aviv University
 as part of our application for an official tech track. The project is live 
 [here](https://tamid-tau-link-shortener.web.app).
 
-##Built by
+## Built by
 - Teo Maayan - Director of Tech
 - Ralph Betesh - Director of Tech
 - John Morozov - Track Member
@@ -13,7 +13,7 @@ as part of our application for an official tech track. The project is live
 - Yuval Eilat - Track Member
 - Brooke Chasalow - Track Member
 
-##Structure
+## Structure
 Our project, hosted entirely on Google Cloud Platform, consists of a simple 
 frontend, using Bootstrap and jQuery, which interacts with our Python backend, 
 running as a Flask server as part of a Google Cloud Run Function. The backend 
@@ -21,8 +21,8 @@ is connected to a Google Firestore database, and the frontend is hosted on Fireb
 
 Our website has tracks usage using Google Analytics.
 
-##Development Process
-###Challenges
+## Development Process
+### Challenges
 Since we only had one week between returning to campus
 from the Passover break and submission of our project,
 we did not have sufficient time for enough education
@@ -42,7 +42,7 @@ for this semester is to have the members, some of which have no coding
 experience at all, be ready to work on real projects in next semester's
 tech track.
 
-###Future Features
+### Future Features
 In the future, we would like to add a login feature, which wasn't yet added
 due to time constraints. In a dashboard, a logged in user should be able to see
 statistics about their created short urls, create custom ones, and delete them.
