@@ -2,7 +2,8 @@ $(function () {
 
     // Using regex, function for detecting if something entered is indeed a URL
     const isValidUrl = urlString=> {
-	  	var urlPattern = new RegExp('^(http:\\/\\/www\\.|https:\\/\\/www\\.|http:\\/\\/|https:\\/\\/)?[a-z0-9]+([\\-\\.]{1}[a-z0-9]+)*\\.[a-z]{2,5}(:[0-9]{1,5})?(\\/.*)?$','i'); // validate fragment locator
+        //Regex via https://stackoverflow.com/questions/4275525/regex-for-urls-without-http-https-ftp
+	  	var urlPattern = new RegExp('^(http:\\/\\/www\\.|https:\\/\\/www\\.|http:\\/\\/|https:\\/\\/)?[a-z0-9]+([\\-\\.]{1}[a-z0-9]+)*\\.[a-z]{2,5}(:[0-9]{1,5})?(\\/.*)?$','i');
 	  return !!urlPattern.test(urlString);
 	}
 
