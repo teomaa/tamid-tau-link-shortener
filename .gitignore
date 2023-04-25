@@ -1,3 +1,6 @@
 backend/firebase_cert.json
 .DS_Store
 .idea/*
+**/firebase-debug.log
+**/.firebase
+**/.firebaserc

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Page title -->
+    <title>TAMID URL Shortener</title>
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
+    <!-- TAMID Logo -->
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <img class="tamid-logo" src="img/tamid-logo.png"/>
+        </div>
+    </header>
+
+    <!-- Custom styles for this template -->
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">The TAMID Link Shortener</h1>
+        <p class="lead">
+            A quick and easy way to convert any long URL into a short, easy to remember one. With our great app, your
+            links
+            will TAMID be shorter than the competition!
+        </p>
+
+        <!-- Form with input and button to shorten URLs -->
+        <form class="form-inline mx-auto">
+            <div class="form-group mx-sm-2 mb-2">
+                <label class="sr-only">Your URL</label>
+                <input class="form-control" id="url_text_field" placeholder="Long URL">
+            </div>
+            <p class="lead">
+                <a href="#" id="main_button" class="btn btn-lg btn-secondary">Shorten</a>
+            </p>
+        </form>
+
+    <!-- Alert shown when a URL is shortened -->
+    <div class="alert alert-primary " role="alert">
+        Success! Your short url is <a href="" id="short_url_clickable"></a>
+    </div>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>Made by the members of TAMID at Tel Aviv University</p>
+        </div>
+    </footer>
+</div>
+
+<script src="jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyC67DsenneiHGxwUsLmXxNguCr66QxOqA4",
+    authDomain: "tamid-tau-link-shortener.firebaseapp.com",
+    projectId: "tamid-tau-link-shortener",
+    storageBucket: "tamid-tau-link-shortener.appspot.com",
+    messagingSenderId: "252737719873",
+    appId: "1:252737719873:web:184bd9c628fa05a507c0c0"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+</body>
+</html>
