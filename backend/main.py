@@ -55,8 +55,12 @@ def save_anonymous():
         json = request.json
         existing_entry = url_database.where(u'long_url', u'==', json['long_url']).get()
         if len(existing_entry) > 0:
-            return 'URL already saved', 200
+            return existing_entry[0].id, 200
 
+        if 'https://' in json['long_url']:
+            json['long_url'] = json['long_url'].replace('https://', '')
+        elif 'http://' in json['long_url']:
+            json['long_url'] = json['long_url'].replace('http://', '')
         short_url = ''.join(random.choice(ascii_letters) for i in range(6))
 
         json['id'] = short_url
